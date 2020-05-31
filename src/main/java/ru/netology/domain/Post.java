@@ -11,6 +11,52 @@ public class Post {
     private PostView postView;
     private String id;
     private String groupName;
+    private int can_edit;
+
+    public int getCan_edit() {
+        return can_edit;
+    }
+
+    public void setCan_edit(int can_edit) {
+        this.can_edit = can_edit;
+    }
+
+    public int getCan_delete() {
+        return can_delete;
+    }
+
+    public void setCan_delete(int can_delete) {
+        this.can_delete = can_delete;
+    }
+
+    public int getCan_pin() {
+        return can_pin;
+    }
+
+    public void setCan_pin(int can_pin) {
+        this.can_pin = can_pin;
+    }
+
+    private int can_delete;
+    private int can_pin;
+    public int getFrom_id() {
+        return from_id;
+    }
+
+    public void setFrom_id(int from_id) {
+        this.from_id = from_id;
+    }
+
+    public String getGeo() {
+        return geo;
+    }
+
+    public void setGeo(String geo) {
+        this.geo = geo;
+    }
+
+    private int from_id;
+    private String geo;
 
     public String getTest() {
         return test;
@@ -102,4 +148,4 @@ public class Post {
         this.postView = postView;
     }
 
- }
+}
