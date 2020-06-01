@@ -1,7 +1,12 @@
 package ru.netology.domain;
 
 public class PostView {
+
     public class CommentsInfo {
+
+        private int count;
+        private boolean canPost;
+
         public int getCount() {
             return count;
         }
@@ -18,7 +23,6 @@ public class PostView {
             this.canPost = canPost;
         }
 
-        private int count;
-        private boolean canPost;
+
     }
 }
